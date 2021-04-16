@@ -1,0 +1,33 @@
+<ui:UiBinder xmlns:ui='urn:ui:com.google.gwt.uibinder'
+             xmlns:g='urn:import:com.google.gwt.user.client.ui'>
+
+    <g:VerticalPanel width="100%">
+        <g:HTMLPanel ui:field="form" addStyleNames="center-block">
+            <ul class="list-unstyled">
+                <li class="p-1">How many numbers to display?</li>
+                <li class="p-1">
+                    <input type="number" min="1" max="100" step="1" name="workCompleted" ui:field="numberCount" class="custom" />
+                </li>
+                <li class="p-1">
+                    <g:Button ui:field="submitBtn" styleName="btn btn-primary d-block">Enter</g:Button>
+                </li>
+                <li class="p-1">
+                    <g:HTMLPanel ui:field="errorMessageContainer"></g:HTMLPanel>
+                </li>
+            </ul>
+        </g:HTMLPanel>
+        <g:DockPanel ui:field="numbersContainer" width="80%" addStyleNames="center-block">
+            <g:Dock direction='CENTER' width="80%">
+                <g:SimplePanel ui:field="tableContainer"></g:SimplePanel>
+            </g:Dock>
+            <g:Dock direction='EAST' width="20%">
+                <g:HTMLPanel>
+                    <g:Button ui:field="sortBtn" styleName="btn btn-success d-block m-1">Sort</g:Button>
+                    <g:Button ui:field="resetBtn" styleName="btn btn-success d-block m-1">Reset</g:Button>
+                </g:HTMLPanel>
+            </g:Dock>
+        </g:DockPanel>
+    </g:VerticalPanel>
+
+
+</ui:UiBinder>

@@ -1,0 +1,47 @@
+.d-block {
+    display: block;
+    width: 100%;
+}
+.center-block {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.list-unstyled {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.m-1 {
+    margin: 10px;
+}
+
+.btn {
+    border: unset;
+    color: white;
+    padding: 6px 16px;
+}
+
+.btn-primary {
+    background: #4080b7;
+}
+
+.btn-success {
+    background: #198754;
+}
+
+input {
+    width: 100%
+}
+
+table.cell-filled tr td {
+    color: white;
+    background: #4080b7;
+    padding: 5px 20px;
+}
