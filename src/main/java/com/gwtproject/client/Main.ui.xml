@@ -2,23 +2,20 @@
              xmlns:g='urn:import:com.google.gwt.user.client.ui'>
 
     <g:VerticalPanel width="100%">
-        <g:HTMLPanel ui:field="form" addStyleNames="center-block">
+        <g:HTMLPanel ui:field="formContainer" addStyleNames="center-block">
             <ul class="list-unstyled">
                 <li class="p-1">How many numbers to display?</li>
                 <li class="p-1">
-                    <input type="number" min="1" max="100" step="1" name="workCompleted" ui:field="numberCount" class="custom" />
+                    <input type="number" min="1" max="100" step="1" name="workCompleted" ui:field="numberCountInput" class="custom" />
                 </li>
                 <li class="p-1">
                     <g:Button ui:field="submitBtn" styleName="btn btn-primary d-block">Enter</g:Button>
-                </li>
-                <li class="p-1">
-                    <g:HTMLPanel ui:field="errorMessageContainer"></g:HTMLPanel>
                 </li>
             </ul>
         </g:HTMLPanel>
         <g:DockPanel ui:field="numbersContainer" width="80%" addStyleNames="center-block">
             <g:Dock direction='CENTER' width="80%">
-                <g:SimplePanel ui:field="tableContainer"></g:SimplePanel>
+                <g:SimplePanel ui:field="tableWrapper"></g:SimplePanel>
             </g:Dock>
             <g:Dock direction='EAST' width="20%">
                 <g:HTMLPanel>
